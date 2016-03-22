@@ -3,8 +3,8 @@ apply plugin: 'com.android.library'
 group = 'com.umeng.update'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "23.0.1"
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
 
     defaultConfig {
         minSdkVersion 8
@@ -20,7 +20,7 @@ android {
 }
 
 dependencies {
-    compile files('libs/umeng-update-v2.6.0.1.jar')
+    compile files('libs/umeng-update-v2.7.0.jar')
 }
 
 //for uploadjar
@@ -29,7 +29,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.3.1'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.6'
     }
 }
 apply from: 'gradle-jcenter-push.gradle'
